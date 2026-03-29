@@ -1,10 +1,10 @@
 # EVERYTHING-OS
 
 # Parts needed :
-> esp32-wroom
-> breadboard (dosent matter how big/small, but i used the small 400 hole)
-> SSD1306 oled screen
-> KY-023 joystick (i personally used the Keyes_Sjoys, its the same as the KY-023)
+esp32-wroom
+breadboard (dosent matter how big/small, but i used the small 400 hole)
+SSD1306 oled screen
+KY-023 joystick (i personally used the Keyes_Sjoys, its the same as the KY-023)
 
 # Wiring :
 esp32 3V > breadbaord "+ row"
