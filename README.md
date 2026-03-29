@@ -55,3 +55,6 @@
 # Pictures
 ![1](https://github.com/user-attachments/assets/3d21ff19-6f6f-4752-9051-7c1690e79fe6)
 ![2](https://github.com/user-attachments/assets/9b1bf816-98d4-49bd-b5f0-dcc16133b6b3)
+
+# IMPORTANT
+This repository was meant for other people to contribute this project, this will probally be the only release ever made.
