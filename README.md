@@ -43,10 +43,11 @@
 
 # Installation
 1. install the Platformio Extension for vscode (and if you dont have vscode, install vscode)
-2. Run this command to create the project directorys : mkdir -p ~/Documents && mkdir -p ~/Documents/PlatformIO && mkdir -p ~/Documents/PlatformIO/Projects
+2. Run this command to create the project directorys : mkdir -p ~/Documents && mkdir -p ~/Documents/PlatformIO && mkdir -p ~/Documents/PlatformIO/Projects && mkdir -p ~/Documents/PlatformIO/Projects/everything-os
 3. clone the github repository : git clone https://github.com/fenyox-ok/everything-os
-4. mv ./everything-os/project ~/Documents/PlatformIO/Projects/everything-os
+4. mv ./everything-os/project/* ~/Documents/PlatformIO/Projects/everything-os/
 5. go to the everything-os directory : cd ~/Documents/PlatformIO/Projects/everything-os
 6. compile the monitor tool : gcc -O2 -Wno-format-truncation -o monitor monitor.c
 7. (optional) remove the monitor.c file : rm monitor.c
 8. now upload the code to the esp32 with the "pio" command (make sure the pio command is in path) (make sure its plugged in) : pio run -t upload
+9. (optionally) enable the systemd service to start the monitor executable, edit the YOURUSERNAME in the service file to your username : sudo cp everything-os/esp32-monitor.service /etc/systemd/system/ && sudo systemctl daemon-reexec && sudo systemctl daemon-reload && sudo systemctl enable esp32-monitor && sudo systemctl start esp32-monitor
