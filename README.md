@@ -51,3 +51,7 @@
 7. (optional) remove the monitor.c file : rm monitor.c
 8. now upload the code to the esp32 with the "pio" command (make sure the pio command is in path) (make sure its plugged in) : pio run -t upload
 9. (optionally) enable the systemd service to start the monitor executable, edit the YOURUSERNAME in the service file to your username : sudo cp everything-os/esp32-monitor.service /etc/systemd/system/ && sudo systemctl daemon-reexec && sudo systemctl daemon-reload && sudo systemctl enable esp32-monitor && sudo systemctl start esp32-monitor
+
+# Pictures
+![1](https://github.com/user-attachments/assets/3d21ff19-6f6f-4752-9051-7c1690e79fe6)
+![2](https://github.com/user-attachments/assets/9b1bf816-98d4-49bd-b5f0-dcc16133b6b3)
