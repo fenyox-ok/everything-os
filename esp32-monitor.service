@@ -1,0 +1,10 @@
+[Unit]
+Description=ESP32 Laptop Monitor
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/YOURUSERNAME/Documents/PlatformIO/Projects/everything-os/monitor
+
+[Install]
+WantedBy=multi-user.target
